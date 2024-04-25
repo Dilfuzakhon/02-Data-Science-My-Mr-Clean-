@@ -1,35 +1,29 @@
-##Welcome to my Mr_clean project
+##Welcome to My Mr_Clean project
 ##Task
-Get some article from Wikipedia to work with.
-Extract meaningful and usable content from this article.
-Clean up and filter the data to narrow the scope to relevant words
-Build a simple frequency model.
-Analysing the article based on this model.
+Getting the Data: The script uses the Wikipedia API to retrieve the content of the specified article.
+Cleaning: The retrieved content is cleaned to remove markup, URLs, and other irrelevant characters.
+Tokenization: The cleaned text is tokenized into individual words.
+Term Frequency: The frequency of each word is counted, and stopwords are removed to focus on meaningful words.
+Visualizing: Finally, a bar chart is generated to visualize the frequency distribution of the top 25 most frequent words.
 
 ##Description
-It is time to get our hands dirty and to manipulate some real world data. You have been hired by a new company named EncyclEarthpedia and your first task it build a search engine. EncyclEarthpedia is an online encyclopedia but specialized in the planet Earth, its geology, biology, and everything related to the Earth.
-
-The search engine should be simple at first. The user needs to be able to type some words and the engine returns the most relevant articles.
-
-There is a problem though. The engineers working on the database messed up and EncyclEarthpedia's database and API are not available for a week. This is a bummer ! If we can't have access to the articles, how are we going to build our engine ?
-
-Instead of waiting for a week, we are going to build a simple model for some similar article from Wikipedia.
+This Project analyzes the word frequency distribution in a Wikipedia article. It retrieves the content of the specified article from Wikipedia, cleans and tokenizes the text, and then generates a visualization of the top 25 most frequent words, excluding common English stopwords.
 
 ##Installation
-To run this script, you'll need Python 3 installed on your system along with the following libraries:
-
-requests: To send HTTP requests to fetch Wikipedia article content.
-beautifulsoup4: For parsing HTML content fetched from Wikipedia.
-matplotlib: For plotting the bar chart.
-seaborn: For styling the plot.
-numpy: For numerical operations.
-heapq: For identifying the top N most frequent words.
-collections: For counting the frequency of words.
-re: For tokenizing the text.
+Make sure you have Python installed (version 3.6 or higher).
+Install the required Python packages using pip:
+Importing Libraries:
+re: This module provides regular expression matching operations.
+requests: This library is used to send HTTP requests to the Wikipedia website.
+numpy: NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.
+matplotlib.pyplot: This module provides a MATLAB-like plotting framework.
+seaborn: Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics.
+bs4 (Beautiful Soup): This library is used for pulling data out of HTML and XML files.
+Counter (from collections): This class is used to count hashable objects.
+nltk: NLTK (Natural Language Toolkit) is a leading platform for building Python programs to work with human language data.
 
 ##Usage
 Clone or download the script wikipedia_article_analyzer.py to your local machine.
 Open a terminal or command prompt.
 Navigate to the directory where the script is located.
-Run the script using the following command:
-python wikipedia_article_analyzer.py
+Run the script 
